@@ -12,3 +12,4 @@
  Datenquelle: Stadt Tübingen
  
  Die WebKarte ist in einer Zusammenarbeit von Peter Wolf und Timo Walcher entstanden.
+ Link zur Online-Version: https://timow98.github.io/WebKarte_Tuebingen/
