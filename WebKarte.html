@@ -26,8 +26,8 @@
   <script src="Wahlbezirke_Stadtteile_disaggregiert_join_V.js"></script>
   
   <!-- Legende Plugin -->
-  <script src="/Plugin_Legende/src/leaflet.legend.js"</script>
-  <script src="/Plugin_Legende/src/leaflet.legend.css"</script>
+  <link rel="stylesheet" href="Plugin_Legende/src/leaflet.legend.css" />
+  <script type="text/javascript" src="Plugin_Legende/src/leaflet.legend.js"></script>
   
   <!-- Links to the Leaflet Grouped Layers Plugin -->
   
@@ -228,7 +228,7 @@ var options = {
  };
  
 L.control.Legend({
-    position: "bottomleft",
+    position: "bottomright",
     legends: [{
         label: "Marker1",
         type: "image",
