@@ -25,7 +25,11 @@
   <script src="Wahlbezirke_Stadtteile_disaggregiert_join_P.js"></script>
   <script src="Wahlbezirke_Stadtteile_disaggregiert_join_V.js"></script>
   
-  <!-- Links to the Leaflet-Ruler Plugin -->
+  <!-- Legende Plugin -->
+  <script src="/Plugin_Legende/src/leaflet.legend.js"</script>
+  <script src="/Plugin_Legende/src/leaflet.legend.css"</script>
+  
+  <!-- Links to the Leaflet Grouped Layers Plugin -->
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-groupedlayercontrol/0.6.1/leaflet.groupedlayercontrol.js"</script>
   
@@ -222,6 +226,15 @@ var options = {
   label: "Distance"
   }
  };
+ 
+L.control.Legend({
+    position: "bottomleft",
+    legends: [{
+        label: "Marker1",
+        type: "image",
+        url: "",
+    }]
+}).addTo(mymap);
  
 var ruler = L.control.ruler(options).addTo(mymap);
  </script>
